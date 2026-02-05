@@ -16,8 +16,6 @@ The core idea is a **clear separation between modal logic and modal UI**:
 - Core handles state, history, focus, and scroll
 - Each modal fully controls its own layout and behavior
 
----
-
 ## Features
 
 - Nested modals (modal stack)
