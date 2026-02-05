@@ -8,8 +8,9 @@ export function SomeCard({ card }) {
   const { title } = card;
   const { open } = useModal();
 
-  const openModal = (modalId, card) => (event) => {
-    open(modalId, event.currentTarget, card);
+  const openModal = (modalId, payload) => (e) => {
+    const openerEl = e.currentTarget;
+    open(modalId, openerEl, payload);
   };
 
   return (
